@@ -1,0 +1,21 @@
+# Local Doc
+rustup doc
+
+# RUN
+rustc main.rs
+./main
+
+# Create project with CARGO
+cargo new project_name
+
+# Build project
+cargo build
+
+# Cargo RUN
+cargo run
+
+# Check project
+cargo Check
+
+# RELEASE build
+cargo build --release
