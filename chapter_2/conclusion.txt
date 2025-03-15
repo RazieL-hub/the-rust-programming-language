@@ -1,0 +1,19 @@
+# Local Project Doc
+cargo doc --open
+
+# Loop 
+endless loop
+continue break commands
+
+# Match
+return
+Ok()
+Err()
+
+# std::io
+# std::cmp::Ordering
+
+# match with Ordering
+Ordering::Less
+Ordering::Greater
+Ordering::Equal
