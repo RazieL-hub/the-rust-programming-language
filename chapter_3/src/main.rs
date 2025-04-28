@@ -1,3 +1,5 @@
+use core::num;
+
 fn main() {
     let mut x = 5;
     println!("x is {}", x);
@@ -100,6 +102,39 @@ fn main() {
     for num in (1..4).rev() {
         println!("Num is {}", num)
     }
+
+    println!("HOME WORK");
+    temperature_to_celsium(341.0);
+    let x = celsium_to_fahrenheit(32.0);
+    println!("Celsium to fahrenheit is {}", x);
+    fibonacci_number(11);
+    println!("HOME WORK");
+
+}
+
+fn temperature_to_celsium(degrees_fahrenheit: f64) {
+    let conversion: f64 = (degrees_fahrenheit-32.0) * (5.0/9.0);
+    println!("Degrees {} fahrenhet = {} celsium", degrees_fahrenheit, conversion)
+}
+
+fn celsium_to_fahrenheit(degrees_celsium: f64) -> f64 {
+    let conversion: f64 = (degrees_celsium * (9.0/5.0)) + 32.0;
+    conversion
+}
+
+fn fibonacci_number(number: i32) {
+    let mut count = 2;
+    let mut first_number = 0;
+    let mut second_number = 1;
+    while count < number {
+        let res: i32 = first_number + second_number;
+        first_number = second_number;
+        second_number = res;
+        count += 1;
+    }
+
+    println!("Fibonacci {} is {}", number, second_number)
+    
 
 }
 
